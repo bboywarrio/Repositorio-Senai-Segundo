@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(232,232,232);
+    background-image: url("../src/img/fundo-portfolio.jpg");
+    background-position: center top; /* Move a imagem para o centro na parte superior */
+    background-size: cover; /* Garante que a imagem cubra todo o corpo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 90vh;
+    padding-inline: 20px;
+}
+
+main section:nth-child(2) img {
+    width: 250px; /* Defina a largura da imagem como desejado */
+    height: auto; 
+    border-radius: 50%; 
+  }
+  
+
+main section:nth-child(1){
+    width: 800px;
+}
+#redes-sociais{
+    display:flex ;
+    margin-block: 30px;
+    gap: 30px;
+}
+#redes-sociais img{
+    width: 50px;
+    height: auto;
+}
+/* Estilizando os ícones */
+#redes-sociais a img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  transition: filter 0.3s ease;
+}
+
+/* Efeito de transição quando o mouse passa por cima dos ícones */
+#redes-sociais a:hover img {
+  background-color: rgb(250, 214, 12); /* Douradinho */
+  filter: brightness(1.2); /* Aumenta o brilho */
+}
+
+
+main section:nth-child(1) button{
+    background-color: rgb(28,28,28);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 26px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+main section:nth-child(1) button:hover{
+    background-color: rgb(187,0,214);
+}
+
+section p:nth-child(1){
+    font-size: 2.5rem;
+}
+section p:nth-child(2){
+    font-size: 4rem;
+}
+section p:nth-child(2) span {
+    color: rgb(188, 0, 212);
+}
+
+@media screen and (max-width: 1000px){
+    main section:nth-child(1){
+        width:100%
+    }
+    section p:nth-child(1){
+        font-size: 1.5rem;
+    }
+    section p:nth-child(2){
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 805px){
+    main{
+        flex-direction: column;
+    }
+    #redes-sociais{
+        margin-block: 10px;
+    }
+    #imagemDev {
+        width: 10px; /* Define a largura máxima da imagem como 100% do contêiner pai */
+        height: 50px; 
+    }
+    main section:nth-child(1) button{
+        font-size: 20px;
+        padding: 10px 26px;
+    }
+    
+
+}
