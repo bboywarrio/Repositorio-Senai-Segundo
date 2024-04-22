@@ -1,0 +1,155 @@
+/* Estilo do carrinho */
+.featured_carrinho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 450px;
+}
+/* Estilo dos itens do carrinho */
+.cart-items {
+    width: 80%; /* Reduz a largura do carrinho */
+    margin: 20px ; /* Centraliza o carrinho na página */
+    width: 300px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center;
+    
+}
+
+.cart-item {
+    width: 80%;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+/* Estilo do botão "Adicionar ao Carrinho" */
+.btn-adicionar-produtos {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 1rem; /* Tamanho do texto */
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #c83b3b;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição */
+    position: fixed;
+    bottom: 20px; /* Distância do fundo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.btn-adicionar-carrinho:hover {
+    background-color: #ffc107; /* Cor dourada */
+    transform: scale(0.9); /* Aumenta um pouco o tamanho no hover */
+}
+
+/* Estilo dos botões + e - */
+.button-wrapper {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around; /* Espaço entre os botões */
+}
+
+.button-wrapper button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50%; /* Botões redondos */
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #ac0f0f;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição */
+}
+
+.button-wrapper button:hover {
+    background-color: #f9be0d; /* Cor dourada */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+}
+
+.button-wrapper button:active {
+    transform: scale(0.9); /* Reduz um pouco o tamanho quando clicado */
+}
+
+/* Estilo do botão Excluir */
+.delete-button {
+    color: #ffc107;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço entre os botões e o texto */
+}
+
+/* Estilo do Total do Carrinho */
+.total-carrinho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha o texto à direita */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.total-carrinho p {
+    margin: 5px 0; /* Espaçamento entre os elementos */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-align: right; /* Alinha o texto à direita */
+}
+/* Estilo dos botões + e - */
+.button-wrapper button.increase-button,
+.button-wrapper button.decrease-button {
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    color: #fff; /* Cor do texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição */
+}
+
+.button-wrapper button.increase-button {
+    background-color: #73c646; /* Cor vermelha */
+}
+
+.button-wrapper button.decrease-button {
+    background-color: #bf3d3d; /* Cor vermelha */
+}
+
+.button-wrapper button.increase-button:hover,
+.button-wrapper button.decrease-button:hover {
+    background-color: #f9be0d; /* Cor dourada */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho no hover */
+}
+
+.button-wrapper button.increase-button:active,
+.button-wrapper button.decrease-button:active {
+    transform: scale(0.9); /* Reduz um pouco o tamanho quando clicado */
+}
+
+/* Estilo do botão Excluir */
+.delete-button button.remove-button {
+    
+    background-color: #f90d0d;
+}
+.delete-button button.remove-button:hover {
+    background-color: #f9be0d;
+}
