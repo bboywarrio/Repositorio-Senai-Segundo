@@ -19,7 +19,7 @@ function home() {
     <section className="welcome">
     <div className="featured_apresentation">
         <h2 className='home-title'>Olá, somos da Hachi Pet</h2>
-        <p>Bem-vindo ao Hachi Pet, o seu destino online para tudo relacionado a cuidados e amor pelos nossos amigos de quatro patas. Aqui, no coração digital da comunidade pet, você encontrará uma variedade de recursos, desde dicas úteis de saúde e bem-estar até produtos exclusivos para atender às necessidades do seu companheiro peludo. Prepare-se para explorar um mundo onde cada latido, ronronado ou sibilo é celebrado! </p>
+        <p className='subtitle'>Bem-vindo ao Hachi Pet, o seu destino online para tudo relacionado a cuidados e amor pelos nossos amigos de quatro patas. Aqui, no coração digital da comunidade pet, você encontrará uma variedade de recursos, desde dicas úteis de saúde e bem-estar até produtos exclusivos para atender às necessidades do seu companheiro peludo. Prepare-se para explorar um mundo onde cada latido, ronronado ou sibilo é celebrado! </p>
     </div>
     </section>
     
@@ -30,7 +30,7 @@ function home() {
         <div>
             <h3>Veja nossos produtos</h3>
             <div>
-                
+
             </div>
         </div>
         <div>

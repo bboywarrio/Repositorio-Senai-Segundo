@@ -12,6 +12,10 @@ h2{
 p{
     margin-bottom: 20px;
 }
+.subtitle{
+  font-size: 16px;
+
+}
 .home-featured{
     background-color: #C4ECE9;
     text-align: center;
