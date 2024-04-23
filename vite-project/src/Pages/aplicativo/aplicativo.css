@@ -51,6 +51,7 @@ button{
     align-items: center;
     margin: 0;
     width: 100%;
+    margin-top: 80px;
 }
 
 .second{
@@ -136,6 +137,7 @@ button{
     .app-container h1 {
         font-size: 30px;
         padding-top: 50px;
+        margin-top: 70px;
     }
 
     .app-container p {

@@ -1,12 +1,28 @@
 .featured_products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4ECE9;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.produtos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
 }
 
 .card-container {
     width: 300px;
     margin-bottom: 20px;
+    z-index: 998;
+    padding: 20px;
 }
 
 .container-item-home {

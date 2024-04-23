@@ -1,50 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
-import { useCart } from '../../context/CartContext';
-import '../Carrinho';
 
-function Carrinho() {
-  const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity } = useCart(); // Importa cartItems e funções do contexto
+import './Contato.css';
+function Contato() {
+    return(<>
+    <section className="welcome">
+                <div className="feacture_enterprise">
+                    <h2>Entre em Contato</h2>
+                    {/* Adicione o ícone do envelope usando a classe do Font Awesome */}
+                    <i className="fas fa-envelope" style={{ color: '#007bff' }}></i>&ensp;
+                    <a href="mailto:svsmiguel@gmail.com" className="contact-link">meuemailteste@gmail.com</a>
+                    <br /> <br />
 
-  // Função para calcular o total do carrinho
-  const calcularTotal = () => {
-    let total = 0;
-    cartItems.forEach((item) => {
-      total += item.valor * item.quantity; // Multiplica o valor do produto pela quantidade e adiciona ao total
-    });
-    return total.toFixed(2); // Retorna o total com duas casas decimais
-  };
+                    <i className="fab fa-whatsapp" style={{ color: 'green' }}></i>&ensp;
+                    <a href="https://wa.me/5511515912641?text=Mensagem+teste+para+o+projeto+SENAI" className="whatsapp-link">
+                        <span style={{ color: 'red' }}>Nosso WhatsApp para contato! </span>
+                        11-515912641
+                    </a>
+                    <br /> <br />
+                    <p>Estamos aqui para ajudar. Envie-nos uma mensagem!</p>
+                </div>
+            </section>
 
-  return (
-    <div className="carrinho-container">
-      <h2>Produtos no Carrinho</h2>
-      {cartItems.length === 0 ? (
-        <div>
-          <p>Carrinho vazio, você pode realizar compras acessando nossa página de produtos!</p>
-          <Link to="/produtos" className="btn-adicionar-produtos">Adicionar Produtos</Link>
-        </div>
-      ) : (
-        <div>
-          <div className="cart-items">
-            {cartItems.map((item) => (
-              <div key={item.id} className="cart-item">
-                <img src={item.img} alt={item.nome} />
-                <p>{item.nome}</p>
-                <p>Preço: R$ {item.valor}</p>
-                <p>Quantidade: {item.quantity}</p>
-                <button onClick={() => increaseQuantity(item.id)}>+</button>
-                <button onClick={() => decreaseQuantity(item.id)}>-</button>
-                <button onClick={() => removeFromCart(item.id)}>Excluir</button>
-              </div>
-            ))}
-          </div>
-          <div className="total-carrinho">
-            <p>Total do Carrinho: R$ {calcularTotal()}</p>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+            <section className='featured_home welcome'>
+                <div className='featured_container'>
+                    <h2>Formulário de Contato</h2>
+                    <form className="contact-form">
+                        <div className="form-group">
+                            <label htmlFor="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message">Mensagem:</label>
+                            <textarea id="message" name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" className="btn fill">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+
+            <section className="welcome">
+</section>
+    </>)
 }
-
-export default Carrinho;
+export default Contato

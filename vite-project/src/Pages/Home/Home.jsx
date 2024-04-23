@@ -18,30 +18,29 @@ function home() {
     
     <section className="welcome">
     <div className="featured_apresentation">
-        <h2>Olá, somos da Hachi pet</h2>
-
+        <h2 className='home-title'>Olá, somos da Hachi Pet</h2>
         <p>Cada um dos nossos produtos é especialmente pensado para o melhor dos nossos amaveis companheiros </p>
     </div>
     </section>
     
-    <Carosel/>
 
     <section className='home-featured welcome'>
+        <Carosel/>
         <div className='home-featured_container'>
-            <h2>Nossos Produtos:</h2>
-            <div className="featured_products">  
+            <h2 className='home-title'>Nossos Produtos:</h2> 
+            <div className='home_featured_products'>
             { valor.map((d, i) => (
-                    <div key={i} className='container_cards'>
+                    <div key={i} className='card-container'>
                         <div className="container-item-home">
-                        <div className="home-wrapper">
-                                <div class=""> <img src={d.img} alt="" className='img-card'/> </div>
-                                <h3 className='title_card'> <span><h6>{d.nome}</h6></span></h3>
-                                <p className='description_title'><span>Tamanho {d.tamanho}</span></p>
+                            <div className="home-wrapper">
+                                    <div class=""> <img src={d.img} alt="" className='img-card'/> </div>
+                                    <h3 className='title_card'> <span><h6>{d.nome}</h6></span></h3>
+                                    <p className='description_title'><span>Tamanho {d.tamanho}</span></p>
+                                </div>
+                                <div className=""> 
+                                    <button class="btn buttonfill">COMPRE AGORA</button>
+                                </div>
                             </div>
-                            <div className="button-wrapper"> 
-                                <button class="btn buttonfill">COMPRE AGORA</button>
-                            </div>
-                        </div>
                     </div>
                 ))
             }

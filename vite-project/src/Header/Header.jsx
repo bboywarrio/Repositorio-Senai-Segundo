@@ -4,7 +4,7 @@ function Header ()
 {
     return(
         <>
-        <header>
+        <header className='fix'>
           
             <div>
                 <a href="/">
@@ -16,16 +16,17 @@ function Header ()
                     <a href="/">
                         <li>Home</li>
                     </a>
-                    <a href="Produtos">
+                    <a href="/Produtos">
                         <li>Produtos</li>
                     </a>
-                    <a href="Aplicativo">
+                    <a href="/Aplicativo">
                         <li>Aplicativo</li>
                     </a>
-                    <a href="Sobre">
-                        <li>Sobre</li>
+                    <a href="/contato">
+                        <li>Contato</li>
                     </a>
                 </ul>
+            
             </nav>
         </header>
 

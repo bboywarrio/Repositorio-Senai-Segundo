@@ -38,7 +38,7 @@ function Footer() {
                     <div className="col col-1 acard">
                         <h4>Entre em contato</h4>
                         <ul>
-                            <li className="footer-menu-item"><a href="#">11-515912641</a></li>
+                            <li className="footer-menu-item"><a href="https://wa.me/5521416125142?text=Mensagem+teste+para+o+projeto+SENAI" >21-9406549898</a></li>
                             <li className="footer-menu-item"><a href="/contato">Contato</a></li>
                         </ul>
                     </div>

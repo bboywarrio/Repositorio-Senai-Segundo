@@ -102,20 +102,10 @@
     color: #ffffff; /* Cor branca */
 }
 
-.btn.fill:hover {
-    background-color: #ffa876; /* Cor laranja mais claro */
-}
 
-.btn.outline {
-    background-color: transparent;
-    color: #ff8b51; /* Cor laranja */
-    border: 2px solid #ff8b51; /* Cor laranja */
-}
 
-.btn.outline:hover {
-    background-color: #ff8b51; /* Cor laranja */
-    color: #ffffff; /* Cor branca */
-}
+
+
 
 .welcome p {
     color: #000000; /* Cor preta */
