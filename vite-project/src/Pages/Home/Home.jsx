@@ -19,32 +19,23 @@ function home() {
     <section className="welcome">
     <div className="featured_apresentation">
         <h2 className='home-title'>Olá, somos da Hachi Pet</h2>
-        <p>Cada um dos nossos produtos é especialmente pensado para o melhor dos nossos amaveis companheiros </p>
+        <p>Bem-vindo ao Hachi Pet, o seu destino online para tudo relacionado a cuidados e amor pelos nossos amigos de quatro patas. Aqui, no coração digital da comunidade pet, você encontrará uma variedade de recursos, desde dicas úteis de saúde e bem-estar até produtos exclusivos para atender às necessidades do seu companheiro peludo. Prepare-se para explorar um mundo onde cada latido, ronronado ou sibilo é celebrado! </p>
     </div>
     </section>
     
 
     <section className='home-featured welcome'>
         <Carosel/>
-        <div className='home-featured_container'>
-            <h2 className='home-title'>Nossos Produtos:</h2> 
-            <div className='home_featured_products'>
-            { valor.map((d, i) => (
-                    <div key={i} className='card-container'>
-                        <div className="container-item-home">
-                            <div className="home-wrapper">
-                                    <div class=""> <img src={d.img} alt="" className='img-card'/> </div>
-                                    <h3 className='title_card'> <span><h6>{d.nome}</h6></span></h3>
-                                    <p className='description_title'><span>Tamanho {d.tamanho}</span></p>
-                                </div>
-                                <div className=""> 
-                                    <button class="btn buttonfill">COMPRE AGORA</button>
-                                </div>
-                            </div>
-                    </div>
-                ))
-            }
+
+        <div>
+            <h3>Veja nossos produtos</h3>
+            <div>
+                
             </div>
+        </div>
+        <div>
+            <h3>Quem somos</h3>
+            <p>No Hachi Pet, somos uma equipe apaixonada por animais de estimação, dedicada a fornecer as melhores informações, produtos e serviços para fortalecer o vínculo entre humanos e seus bichinhos queridos. Nossa jornada começou com uma simples missão: tornar a vida dos animais de estimação mais feliz e saudável, e desde então, temos trabalhado incansavelmente para alcançar esse objetivo. Com especialistas em cuidados veterinários, amantes de animais e entusiastas da tecnologia, estamos aqui para ajudar você e seu peludo a desfrutarem de uma vida cheia de alegria, saúde e amor.</p>
         </div>
     </section>
     </>)
